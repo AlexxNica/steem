@@ -81,7 +81,6 @@ namespace steem { namespace chain {
           */
          void open( const fc::path& data_dir, const fc::path& shared_mem_dir, uint64_t initial_supply = STEEM_INIT_SUPPLY, uint64_t shared_file_size = 0, uint32_t chainbase_flags = 0,
                     bool do_validate_invariants = false );
-
          /**
           * @brief Rebuild object graph from block history and open detabase
           *
@@ -367,7 +366,7 @@ namespace steem { namespace chain {
          /// Reset the object graph in-memory
          void initialize_indexes();
          void init_schema();
-         void init_genesis(uint64_t initial_supply = STEEM_INIT_SUPPLY );
+         void init_genesis( bool apply_all_hardforks, uint64_t initial_supply = STEEM_INIT_SUPPLY );
 
          /**
           *  This method validates transactions without adding it to the pending state.
