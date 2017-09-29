@@ -20,8 +20,10 @@
 #define SBD_SYMBOL    (uint64_t(3) | (uint64_t('T') << 8) | (uint64_t('B') << 16) | (uint64_t('D') << 24) ) ///< Test Backed Dollars with 3 digits of precision
 #define STMD_SYMBOL   (uint64_t(3) | (uint64_t('T') << 8) | (uint64_t('S') << 16) | (uint64_t('T') << 24) | (uint64_t('D') << 32) ) ///< Test Dollars with 3 digits of precision
 
-#define STEEM_SYMBOL_NAME                          "TEST"
+#define STEEM_SYMBOL_NAME                     "TEST"
 #define STEEM_ADDRESS_PREFIX                  "TST"
+
+#define STEEM_INIT_SUPPLY                     int64_t(1000000000)
 
 #define STEEM_GENESIS_TIME                    (fc::time_point_sec(1451606400))
 #define STEEM_MINING_TIME                     (fc::time_point_sec(1451606400))
@@ -84,8 +86,11 @@
 #define STEEM_SYMBOL  (uint64_t(3) | (uint64_t('S') << 8) | (uint64_t('T') << 16) | (uint64_t('E') << 24) | (uint64_t('E') << 32) | (uint64_t('M') << 40)) ///< STEEM with 3 digits of precision
 #define SBD_SYMBOL    (uint64_t(3) | (uint64_t('S') << 8) | (uint64_t('B') << 16) | (uint64_t('D') << 24) ) ///< STEEM Backed Dollars with 3 digits of precision
 #define STMD_SYMBOL   (uint64_t(3) | (uint64_t('S') << 8) | (uint64_t('T') << 16) | (uint64_t('M') << 24) | (uint64_t('D') << 32) ) ///< STEEM Dollars with 3 digits of precision
-#define STEEM_SYMBOL_NAME                          "STEEM"
+
+#define STEEM_SYMBOL_NAME                     "STEEM"
 #define STEEM_ADDRESS_PREFIX                  "STM"
+
+#define STEEM_INIT_SUPPLY                     int64_t(0)
 
 #define STEEM_GENESIS_TIME                    (fc::time_point_sec(1458835200))
 #define STEEM_MINING_TIME                     (fc::time_point_sec(1458838800))
@@ -266,7 +271,6 @@
 #define STEEM_MAX_PERMLINK_LENGTH             256
 #define STEEM_MAX_WITNESS_URL_LENGTH          2048
 
-#define STEEM_INIT_SUPPLY                     int64_t(0)
 #define STEEM_MAX_SHARE_SUPPLY                int64_t(1000000000000000ll)
 #define STEEM_MAX_SIG_CHECK_DEPTH             2
 
